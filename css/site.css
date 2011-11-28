@@ -1,5 +1,9 @@
 
-body { font-family:Calibri; }
-body div#wrapper { width:1000px; margin:0 auto; }
+body { font-family:Calibri; background-image:url('/images/bg.png'); background-color:#E0E4CC; }
+body div#wrapper { width:800px; margin:0 auto; }
+
+div#topBar { height:100px; background-color:#A7DBD8; border-bottom:3px solid #95C3C1; }
+div#titleWrapper { width:800px; margin:0 auto; padding-top:20px; }
+div#titleWrapper h1 { color:#F38630; font-size:28px; font-style:bold; }
 
 h1 { font-size:18px; }
