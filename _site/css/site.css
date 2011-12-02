@@ -2,9 +2,16 @@
 body { font-family: Trebuchet MS; background-image:url('/images/bg.png'); background-color:#ECEEE0; }
 body div#wrapper { width:800px; margin:0 auto; }
 
-img#logo { margin-top:10px; }
+img#logo { margin-top:10px; display:none; }
 
-ul#nav { margin-left:10px; }
 ul#nav a { font-size:80px; cursor:pointer; color:#4DB5C9; }
 ul#nav a:hover { color:#FA6900; }
 ul#nav li { margin:40px 0; }
+
+ul#nav li div.content { display:hidden; }
+
+ul#nav li.active a { color:#FA6900; }
+ul#nav li.active div.content { display:auto; }
+
+div.content { margin-top:20px; color:#333; }
+div.content p {  }

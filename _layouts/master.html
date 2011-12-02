@@ -3,7 +3,7 @@
 	<head>
 		<title>danielormisher</title>
         <link rel="Stylesheet" href="css/reset.css" />
-		<link rel="Stylesheet" href="css/site.css" />
+		<link rel="Stylesheet" href="css/site.css" />		
 	</head>
 	<body>		
         <div id="wrapper">
@@ -13,4 +13,29 @@
         </div>
 	</body>
 
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	
+	<script type="text/javascript">
+		var menu = {
+			about: true,
+			work: false,
+			blog: false,
+			contact: false,
+		};
+	
+		$(function () {
+			$('ul#nav li a').click(function () {
+				var $parent = $(this).parent();			
+				if ($parent.hasClass('active')) {
+					$parent.find('.content').slideUp();				
+				}
+				else {
+					$parent.find('.content').slideDown();
+				}
+				
+				$parent.toggleClass('active');
+			});
+		});
+	</script>
+	
 </html>
