@@ -1,7 +1,10 @@
 
-body { font-family: Trebuchet MS; background-image:url('/images/bg.png'); background-color:#E0E4CC; }
+body { font-family: Trebuchet MS; background-image:url('/images/bg.png'); background-color:#ECEEE0; }
 body div#wrapper { width:800px; margin:0 auto; }
 
-ul#nav a { font-size:60px; cursor:pointer; color:#666; }
+img#logo { margin-top:10px; }
+
+ul#nav { margin-left:10px; }
+ul#nav a { font-size:80px; cursor:pointer; color:#4DB5C9; }
 ul#nav a:hover { color:#FA6900; }
 ul#nav li { margin:40px 0; }

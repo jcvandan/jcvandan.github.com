@@ -1,11 +1,10 @@
 
-body { font-family: Trebuchet MS; background-image:url('/images/bg.png'); background-color:#E0E4CC; }
+body { font-family: Trebuchet MS; background-image:url('/images/bg.png'); background-color:#ECEEE0; }
 body div#wrapper { width:800px; margin:0 auto; }
 
-div#topBar { height:90px; background-color:#A7DBD8; border-bottom:1px solid #95C3C1; }
-div#titleWrapper { width:800px; margin:0 auto; padding:5px; }
-div#titleWrapper h1 { color:#8888; font-size:28px; font-style:bold; }
+img#logo { margin-top:10px; }
 
-ul#nav a { font-size:60px; cursor:pointer; color:#666; }
+ul#nav { margin-left:10px; }
+ul#nav a { font-size:80px; cursor:pointer; color:#4DB5C9; }
 ul#nav a:hover { color:#FA6900; }
 ul#nav li { margin:40px 0; }
