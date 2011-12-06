@@ -6,11 +6,7 @@
 		<link rel="Stylesheet" href="css/site.css" />		
 	</head>
 	<body>		
-        <div id="wrapper">
-			<img src="/images/logo.png" id="logo"/>
-			
-		    {{ content }}
-        </div>
+        <div id="wrapper">{{ content }}</div>
 	</body>
 
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -25,14 +21,8 @@
 	
 		$(function () {
 			$('ul#nav li a').click(function () {
-				var $parent = $(this).parent();			
-				if ($parent.hasClass('active')) {
-					$parent.find('.content').slideUp();				
-				}
-				else {
-					$parent.find('.content').slideDown();
-				}
-				
+				var $parent = $(this).parent();
+				$parent.find('.content').animate({ opacity: 'toggle', height: 'toggle'}, 'slow');
 				$parent.toggleClass('active');
 			});
 		});
