@@ -1,17 +1,24 @@
 
 body { font-family: Trebuchet MS; background-image:url('/images/bg.png'); background-color:#ECEEE0; }
-body div#wrapper { width:800px; margin:0 auto; }
+body div#wrapper { width:800px; margin:0 auto; padding-top:40px; }
 
 img#logo { margin-top:10px; display:none; }
 
-ul#nav a { font-size:80px; cursor:pointer; color:#4DB5C9; }
-ul#nav a:hover { color:#FA6900; }
-ul#nav li { margin:40px 0; }
+ul#nav a.heading { font-size:80px; cursor:pointer; color:#4DB5C9; }
+ul#nav a.heading:hover { color:#FA6900; }
+ul#nav li { margin-bottom:40px; }
 
 ul#nav li div.content { display:hidden; }
 
-ul#nav li.active a { color:#FA6900; }
+ul#nav li.active a.heading { color:#FA6900; display:block; }
 ul#nav li.active div.content { display:auto; }
 
-div.content { margin-top:20px; color:#333; }
+div.content { color:#333; padding-top:20px; font-size:15px; }
 div.content p { line-height:150%; }
+
+div.list { display:inline-block; zoom:1; *display:inline; width:49%; font-size:12px; vertical-align:top;
+		  margin-top:40px; }
+div.list h3 { font-size:14px; font-weight:bold; color:#555; margin-bottom:30px; }
+div.list a { text-decoration:none; color:#FA6900; }
+div.list img { margin-bottom:-4px; }
+div.list ul li { margin:10px 0!important; }

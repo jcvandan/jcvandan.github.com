@@ -6,37 +6,55 @@
 		<link rel="Stylesheet" href="css/site.css" />		
 	</head>
 	<body>		
-        <div id="wrapper">
-			<img src="/images/logo.png" id="logo"/>
-			
-		    <ul id="nav">
+        <div id="wrapper"><ul id="nav">
 	<li id="about" class="active">
-		<a>about me</a>
+		<a class="heading">about me</a>
 		<div class="content">
 			<p>
 				Hi! My name is Daniel Ormisher. I am a web developer, and this is my site. On here you can find information
-				about me and my skills, see examples of my work, and (if you go to my blog) see what's going on inside my
-				head. If you wish to speak to me for any reason please don't hesitate to contact me.
+				about me and what I'm interested in, see examples of my work, and (if you go to my blog) see what wondrous thoughts
+				are emanating from my brain. If you wish to speak to me for any reason please don't hesitate to contact me.
 			</p>
+			<div class="list">
+				<h3>Links</h3>
+				<ul>
+					<li><img src="/images/favfb.png"/>
+						<a href="http://facebook.com/profile.php?id=273103467">http://facebook.com/danielormisher</li>
+					</li>
+					<li>
+						<img src="/images/favtwitter.png"/>
+						<a href="http://twitter.com/dormisher">@dormisher</a>
+					</li>
+					<li>
+						<img src="/images/favgmail.png"/>
+						<a href="mailto:dormisher@gmail.com">dormisher@gmail.com</a>
+					</li>
+				</ul>
+			</div>
+			<div class="list">
+				<h3>What do I do?</h3>
+				<ul>
+					<li></li>
+				</ul>
+			</div>
 		</div>
 	</li>
 	<li id="work">
-		<a>work</a>
+		<a class="heading">work</a>
 		<div class="content">
 		</div>
 	</li>
 	<li id="blog">
-		<a>blog</a>
+		<a class="heading">blog</a>
 		<div class="content">
 		</div>
 	</li>
 	<li id="contact">
-		<a>contact</a>
+		<a class="heading">contact</a>
 		<div class="content">
 		</div>
 	</li>	
-</ul>
-        </div>
+</ul></div>
 	</body>
 
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -51,14 +69,8 @@
 	
 		$(function () {
 			$('ul#nav li a').click(function () {
-				var $parent = $(this).parent();			
-				if ($parent.hasClass('active')) {
-					$parent.find('.content').slideUp();				
-				}
-				else {
-					$parent.find('.content').slideDown();
-				}
-				
+				var $parent = $(this).parent();
+				$parent.find('.content').animate({ height: 'toggle'}, 'slow');
 				$parent.toggleClass('active');
 			});
 		});
