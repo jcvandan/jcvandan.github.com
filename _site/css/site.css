@@ -17,11 +17,14 @@ div.content { color:#333; padding-top:20px; }
 div.content p { line-height:150%; font-family: 'Nixie One', cursive; font-size:20px; }
 
 div.list { display:inline-block; zoom:1; *display:inline; width:49%; vertical-align:top; margin-top:40px; font-size:13px; }
-div.list h3 { color:#555; color:#688887; margin-bottom:30px; font-size:20px; }
-div.list a { text-decoration:none; color:#4DB5C9; }
-div.list a:hover { color:#FA6900; }
+div.list h3 { color:#555; color:; margin-bottom:30px; font-size:20px; }
+div.list a { text-decoration:none; color:#555; }
+div.list a:hover { color:#FA6900; color:#555; }
 div.list img { margin-bottom:-4px; margin-right:5px; }
+div.list ul { margin-left:10px; }
 div.list ul li { margin:10px 0!important; list-style:circle inside; }
 
-div.list ul.contactList li { list-style:none;  }
+div.list ul.contactList li { list-style:none; }
+
+li#work  p { margin-bttom:40px; }
 

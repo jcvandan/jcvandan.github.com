@@ -2,11 +2,13 @@
 <html>
 	<head>
 		<title>danielormisher</title>
-        <link rel="Stylesheet" href="css/reset.css" />
-		<link rel="Stylesheet" href="css/site.css" />
+        <link rel="Stylesheet" href="css/reset.css" type='text/css'/>
+		<link rel="Stylesheet" href="css/site.css" type='text/css'/>
+		<link rel='stylesheet' href='css/nivo-slider.css' type='text/css'>
+		<link rel='stylesheet' href='css/default/default.css' type='text/css'>
 		
 		<link href='http://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>		
 	</head>
 	<body>		
         <div id="wrapper"><ul id="nav">
@@ -52,6 +54,19 @@
 	<li id="work">
 		<a class="heading">work</a>
 		<div class="content">
+			<p>
+				For my day job, I work as an enterprise level web developer / software developer at
+				<a href="http://ekmsystems.com">ekmSystems</a>, the UK's leading provider of hosted ecommerce
+				software solutions. A great place to work where developers skills are highly valued. I primarily work
+				on creating standlone, international products, whose primary purpose is to improve the experience for
+				the core customer group who use <a href="http://ekmpowershop.com">ekmPowershop</a>, the company's flagship
+				product.
+			</p>
+			<div id="slider" class="theme-default">
+				<img src="http://placekitten.com/800/300" />
+				<img src="http://placekitten.com/800/300" />
+				<img src="http://placekitten.com/800/300" />
+			</div>
 		</div>
 	</li>
 	<li id="blog">
@@ -68,7 +83,7 @@
 	</body>
 
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	
+	<script type="text/javascript" src="/scripts/jquery.nivo.slider.js"></script>
 	<script type="text/javascript">
 		var menu = {
 			about: true,
@@ -83,6 +98,8 @@
 				$parent.find('.content').animate({ opacity: 'toggle', height: 'toggle'}, 'slow');
 				$parent.toggleClass('active');
 			});
+			
+			$('#slider').nivoSlider({effect: 'boxRain'});
 		});
 	</script>
 	

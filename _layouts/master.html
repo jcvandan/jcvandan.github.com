@@ -2,18 +2,20 @@
 <html>
 	<head>
 		<title>danielormisher</title>
-        <link rel="Stylesheet" href="css/reset.css" />
-		<link rel="Stylesheet" href="css/site.css" />
+        <link rel="Stylesheet" href="css/reset.css" type='text/css'/>
+		<link rel="Stylesheet" href="css/site.css" type='text/css'/>
+		<link rel='stylesheet' href='css/nivo-slider.css' type='text/css'>
+		<link rel='stylesheet' href='css/default/default.css' type='text/css'>
 		
 		<link href='http://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>		
 	</head>
 	<body>		
         <div id="wrapper">{{ content }}</div>
 	</body>
 
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	
+	<script type="text/javascript" src="/scripts/jquery.nivo.slider.js"></script>
 	<script type="text/javascript">
 		var menu = {
 			about: true,
@@ -28,6 +30,8 @@
 				$parent.find('.content').animate({ opacity: 'toggle', height: 'toggle'}, 'slow');
 				$parent.toggleClass('active');
 			});
+			
+			$('#slider').nivoSlider({effect: 'boxRain'});
 		});
 	</script>
 	
