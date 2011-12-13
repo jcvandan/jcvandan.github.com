@@ -15,6 +15,7 @@
 	<li id="about" class="active">
 		<a class="heading">about me</a>
 		<div class="content">
+			<img src="https://en.gravatar.com/userimage/19867995/72863fbd8d661ce3fe56020164444f89.png" />
 			<p>
 				Hi! My name is Daniel Ormisher. I am a web developer, and this is my site. On here you can find information
 				about me and what I'm interested in, see examples of my work, and (if you go to my blog) see what wondrous thoughts
@@ -33,22 +34,27 @@
 					<li>Migrator dot net</li>
 				</ul>
 			</div>
-			<div class="list">
-				<h3>Links</h3>
-				<ul class="contactList">
-					<li><img src="/images/favfb.png"/>
-						<a href="http://facebook.com/profile.php?id=273103467">http://facebook.com/danielormisher</li>
-					</li>
-					<li>
-						<img src="/images/favtwitter.png"/>
-						<a href="http://twitter.com/dormisher">@dormisher</a>
-					</li>
-					<li>
-						<img src="/images/favgmail.png"/>
-						<a href="mailto:dormisher@gmail.com">dormisher@gmail.com</a>
-					</li>
-				</ul>
-			</div>
+            <div class="list">
+                <h3>Links</h3>
+                <ul>
+                    <li>
+                        <img src="/images/favfb.png"/>
+						<a href="http://facebook.com/profile.php?id=273103467">http://facebook.com/danielormisher</a>                    
+                    </li>
+                    <li>
+                        <img src="/images/favtwitter.png"/>
+						<a href="http://twitter.com/dormisher">@dormisher</a>                    
+                    </li>
+                    <li>
+                        <img src="/images/favgmail.png"/>
+						<a href="mailto:dormisher@gmail.com">dormisher@gmail.com</a>                    
+                    </li>
+                    <li>
+                        <img src="http://stackoverflow.com/favicon.ico"/>
+						<a href="http://stackoverflow.com/users/323051/">Stack Overflow</a>                    
+                    </li>
+                </ul>
+            </div>
 		</div>
 	</li>
 	<li id="work">
@@ -74,29 +80,26 @@
 		<div class="content">
 		</div>
 	</li>
-	<li id="contact">
-		<a class="heading">contact</a>
-		<div class="content">
-		</div>
-	</li>	
 </ul></div>
 	</body>
 
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="/scripts/jquery.nivo.slider.js"></script>
-	<script type="text/javascript">
-		var menu = {
-			about: true,
-			work: false,
-			blog: false,
-			contact: false,
-		};
-	
+	<script type="text/javascript">	
 		$(function () {
 			$('ul#nav li a').click(function () {
 				var $parent = $(this).parent();
 				$parent.find('.content').animate({ opacity: 'toggle', height: 'toggle'}, 'slow');
 				$parent.toggleClass('active');
+				
+				var $this = $(this);
+				$('li.active').each(function () {
+					if ($(this).attr('id') != $this.attr('id')) {
+						var $parent = $(this).parent();
+						$parent.find('.content').animate({ opacity: 'toggle', height: 'toggle'}, 'slow');
+						$parent.toggleClass('active');
+					}
+				});
 			});
 			
 			$('#slider').nivoSlider({effect: 'boxRain'});
