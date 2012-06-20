@@ -18,11 +18,11 @@
 			<img src="https://en.gravatar.com/userimage/19867995/72863fbd8d661ce3fe56020164444f89.png" />
 			<p>
 				Hi! My name is Daniel Ormisher. I am a web developer, and this is my site. On here you can find information
-				about me and what I'm interested in, see examples of my work, and (if you go to my blog) see what wondrous thoughts
-				are emanating from my brain. If you wish to speak to me for any reason please don't hesitate to contact me.
+				about me and what I'm interested in, what I can do, and see examples of my work. If you wish to speak to me
+				for any reason please don't hesitate to get in touch.
 			</p>			
 			<div class="list">
-				<h3>Currently working with...</h3>
+				<h3>Messing around with...</h3>
 				<ul>
 					<li>.NET & C# 4.0</li>
 					<li>ASP.NET MVC 3</li>
@@ -35,24 +35,23 @@
 				</ul>
 			</div>
             <div class="list">
-                <h3>Links</h3>
-                <ul>
+                <h3>Connect with me!</h3>
+                <ul id="connect">
                     <li>
-                        <img src="/images/favfb.png"/>
-						<a href="http://facebook.com/profile.php?id=273103467">http://facebook.com/danielormisher</a>                    
+						<a href="http://facebook.com/profile.php?id=273103467" style="background-image:url('/images/favfb.png')">http://facebook.com/danielormisher</a>                    
                     </li>
                     <li>
-                        <img src="/images/favtwitter.png"/>
-						<a href="http://twitter.com/dormisher">@dormisher</a>                    
+						<a href="http://twitter.com/dormisher" style="background-image:url('/images/favtwitter.png')">@dormisher</a>                    
                     </li>
                     <li>
-                        <img src="/images/favgmail.png"/>
-						<a href="mailto:dormisher@gmail.com">dormisher@gmail.com</a>                    
+						<a href="mailto:dormisher@gmail.com" style="background-image:url('/images/favgmail.png')">dormisher@gmail.com</a>                    
                     </li>
                     <li>
-                        <img src="http://stackoverflow.com/favicon.ico"/>
-						<a href="http://stackoverflow.com/users/323051/">Stack Overflow</a>                    
+						<a href="http://stackoverflow.com/users/323051/" style="background-image:url('http://stackoverflow.com/favicon.ico')">Stack Overflow</a>                    
                     </li>
+					<li>
+						<a href="https://github.com/dormisher" style="background-image:url('/images/gitfav.jpg')">GitHub</a>
+					</li>
                 </ul>
             </div>
 		</div>
@@ -69,15 +68,9 @@
 				product.
 			</p>
 			<div id="slider" class="theme-default">
-				<img src="http://placekitten.com/800/300" />
-				<img src="http://placekitten.com/800/300" />
-				<img src="http://placekitten.com/800/300" />
+				<img src="/images/bcc.png" />
+				<img src="/images/jeff.png" />
 			</div>
-		</div>
-	</li>
-	<li id="blog">
-		<a class="heading">blog</a>
-		<div class="content">
 		</div>
 	</li>
 </ul></div>
@@ -91,15 +84,6 @@
 				var $parent = $(this).parent();
 				$parent.find('.content').animate({ opacity: 'toggle', height: 'toggle'}, 'slow');
 				$parent.toggleClass('active');
-				
-				var $this = $(this);
-				$('li.active').each(function () {
-					if ($(this).attr('id') != $this.attr('id')) {
-						var $parent = $(this).parent();
-						$parent.find('.content').animate({ opacity: 'toggle', height: 'toggle'}, 'slow');
-						$parent.toggleClass('active');
-					}
-				});
 			});
 			
 			$('#slider').nivoSlider({effect: 'boxRain'});

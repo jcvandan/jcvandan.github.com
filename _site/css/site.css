@@ -1,5 +1,6 @@
 
-body { font-family: 'Droid Sans', sans-serif; background-image:url('/images/bg.png'); background-color:#ECEEE0; }
+body { font-family: 'Droid Sans', sans-serif; background-image:url('/images/bg.png'); background-color:#ECEEE0;
+	   padding-bottom:100px; }
 body div#wrapper { width:800px; margin:0 auto; padding-top:40px; }
 
 img#logo { margin-top:10px; display:none; }
@@ -7,8 +8,6 @@ img#logo { margin-top:10px; display:none; }
 ul#nav a.heading { font-size:80px; cursor:pointer; color:#4DB5C9; font-weight:bold; font-family: 'Nixie One', cursive; }
 ul#nav a.heading:hover { color:#FA6900; }
 ul#nav li { margin-bottom:40px; }
-
-ul#nav li div.content { display:none; }
 
 ul#nav li.active a.heading { color:#FA6900; display:block; }
 ul#nav li.active div.content { display:block; }
@@ -18,15 +17,17 @@ div.content p { line-height:150%; font-family: 'Nixie One', cursive; font-size:2
 
 div.list { display:inline-block; zoom:1; *display:inline; width:49%; vertical-align:top; margin-top:40px; font-size:13px; }
 div.list h3 { color:#555; color:; margin-bottom:30px; font-size:20px; }
-div.list a { text-decoration:none; color:#333; }
+div.list a { text-decoration:none; color:#333; background-repeat:no-repeat; padding-left:30px; }
 div.list a:hover { color:#FA6900; }
-div.list img { margin-bottom:-4px; margin-right:5px; }
-div.list ul { margin-left:10px; }
+div.list ul { margin-left:5px; }
 div.list ul li { margin:10px 0!important; list-style:circle inside; }
+div.list ul#connect li { list-style:none outside; }
 
 div.list ul.contactList li { list-style:none; }
 
 li#about img { float:left; margin-right:20px; margin-bottom:-5px; margin-top:5px; }
 
 li#work  p { margin-bttom:40px; }
+
+div#slider { margin-top:40px; }
 
