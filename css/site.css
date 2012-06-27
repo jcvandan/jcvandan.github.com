@@ -1,34 +1,16 @@
 
 body { font-family: 'Droid Sans', sans-serif; background-color:#fff; padding-bottom:100px; font-family: Calibri; }
-body div#wrapper { width:800px; margin:0 auto; padding-top:40px; }
+body div#wrapper { width:800px; margin:0 auto; }
 
 div#topBar { height:50px; background-color:#333; }
+div#bottomBar { min-height:50px; background-color:#333; }
 
-img#logo { margin-top:10px; display:none; }
+h2 { font-size:50px; color:#000; border-bottom:1px solid ddd; margin:40px 0; }
+p { line-height:150%; font-family:Calibri; font-size:20px; color:#444; text-align:justify; }
 
-ul#nav a.heading { font-size:50px; color:#000; border-bottom:1px solid ddd; }
-ul#nav li { margin-bottom:40px; }
-
-ul#nav li.active a.heading { display:block; }
-ul#nav li.active div.content { display:block; }
-
-div.content { color:#333; padding-top:20px; }
-div.content p { line-height:150%; font-family: font-size:20px; color:#444; }
-div.content p.aboutInfo { height: 85px; }
-
-div.list { display:inline-block; zoom:1; *display:inline; width:390px; vertical-align:top; margin-top:40px; font-size:13px; }
-div.list h3 { color:#555; color:; margin-bottom:30px; font-size:20px; }
-div.list a { text-decoration:none; color:#333; background-repeat:no-repeat; padding-left:30px; }
-div.list a:hover { color:#FA6900; }
-div.list ul { margin-left:5px; }
-div.list ul li { margin:10px 0!important; list-style:circle inside; }
-div.list ul#connect li { list-style:none outside; }
-
-div.list ul.contactList li { list-style:none; }
-
-li#about img { float:left; margin-right:20px; margin-bottom:-5px; margin-top:5px; }
-
-li#work  p { margin-bttom:40px; }
-
-div#slider { margin-top:40px; }
-
+ul.list { display:inline-block; zoom:1; *display:inline; width:390px; vertical-align:top; font-size:13px; margin-left:5px; margin-top:20px; }
+ul.list a { text-decoration:none; color:#333; background-repeat:no-repeat; padding-left:30px; }
+ul.list a:hover { color:#FA6900; }
+ul.list li { margin:10px 0!important; list-style:circle inside; }
+ul.list ul#connect li { list-style:none outside; }
+ul.list ul.contactList li { list-style:none; }
