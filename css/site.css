@@ -2,15 +2,24 @@
 body { font-family: 'Droid Sans', sans-serif; background-color:#fff; padding-bottom:100px; font-family: Calibri; }
 body div#wrapper { width:800px; margin:0 auto; }
 
-div#topBar { height:50px; background-color:#333; }
+div#topBar { height:50px; background-color:#333; padding-top:20px; }
+div#topBar p {color:#fff; width:800px; margin:auto;}
 div#bottomBar { min-height:50px; background-color:#333; }
 
-h2 { font-size:50px; color:#000; border-bottom:1px solid ddd; margin:40px 0; }
-p { line-height:150%; font-family:Calibri; font-size:20px; color:#444; text-align:justify; }
+h2 { font-size:35px; color:#333; border-bottom:1px solid #ddd; margin-bottom:20px; margin-top:40px; padding-bottom:10px; }
+p { line-height:150%; font-family:Calibri; font-size:18px; color:#555; text-align:justify; }
+a {color:#026AC2; text-decoration:none;}
+a:hover {color:#026AC2; text-decoration:underline;}
 
-ul.list { display:inline-block; zoom:1; *display:inline; width:390px; vertical-align:top; font-size:13px; margin-left:5px; margin-top:20px; }
+div.tech {display: inline-block; width:390px; vertical-align:top; margin-top:20px;}
+
+ul.list { vertical-align:top; font-size:13px; margin-left:5px; margin-top:20px; }
 ul.list a { text-decoration:none; color:#333; background-repeat:no-repeat; padding-left:30px; }
 ul.list a:hover { color:#FA6900; }
-ul.list li { margin:10px 0!important; list-style:circle inside; }
+ul.list li { margin:10px 0!important; list-style:circle inside; color:#333; }
 ul.list ul#connect li { list-style:none outside; }
 ul.list ul.contactList li { list-style:none; }
+
+div.work {display: inline-block;width: 300px; margin-top:40px;}
+div.work p {font-size:12px;color:#777;}
+div.work img {border-radius:10px; margin-bottom:5px;}
