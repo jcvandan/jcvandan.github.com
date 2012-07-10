@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>danielormisher</title>
+        <link rel="Stylesheet" href="css/reset.css" type='text/css'/>
+		<link rel="Stylesheet" href="css/site.css" type='text/css'/>
+		
+		<link href='http://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>		
+	</head>
+	<body>		
+		<div id="topBar">
+			<p>this site is still under construction!</p>			
+		</div>
+        <div id="wrapper"><style>	
+</style>
+
+<div class="section mr indigo">
+	<div class="overlay">
+		<h2>about me</h2>
+	</div>
+	<h2>about me</h2>
+	<p>
+		Hello! My name is Daniel Ormisher. I am a web developer, and this is my site. On here you can find information
+		about me and what I'm interested in, what I can do, and see examples of my work. If you wish to speak to me
+		for any reason please don't hesitate to get in touch.
+	</p>
+</div>
+
+<div class="section red">
+	<div class="overlay">
+		<h2>tech</h2>
+	</div>
+	<h2>tech</h2>
+	<p>Some of the tech I use on a day to day basis...</p>
+
+	<div class="tech">
+		<h4>.NET</h4>
+		<ul class="list">
+			<li>C# 4.0</li>
+			<li>ASP.NET MVC 3</li>
+			<li>Spark view engine</li>
+			<li>Razor view engine</li>
+			<li>nUnit</li>
+			<li>EF code first</li>
+		</ul>
+	</div>
+
+	<div class="tech">
+		<h4>Javascript</h4>
+		<ul class="list">
+			<li>Backbone</li>
+			<li>Jasmine</li>
+			<li>jQuery</li>
+			<li>RequireJS</li>
+			<li>Underscore</li>
+		</ul>
+	</div>
+</div>
+
+<div class="section mr green">
+	<div class="overlay">
+		<h2>work</h2>
+	</div>
+	<h2>work</h2>
+	<p>
+		For my day job, I work as an work level web developer at <a href="http://ekmsystems.com">ekmSystems</a>,
+		an industry leader in it's field and a fantastic place to work. Below are some examples of my work with ekm.
+	</p>
+
+	<div class="work">
+		<a href="http://ekmdomains.com" target="_blank">
+			<img src="images/ekmdomains-banner.jpg"/>
+		</a>	
+		<p>
+			ekmDomains is an easy to use domain name service which allows users to buy, register and manage their own domain names for online shops and websites created with ekmPowershop and ekmSiteBuilder.
+		</p>
+	</div>
+</div>
+
+<div class="section blue">
+	<div class="overlay">
+		<h2>connect</h2>
+	</div>
+	<h2>connect</h2>
+	<ul class="list">
+		<li>
+			<a href="http://facebook.com/profile.php?id=273103467" style="background-image:url('/images/favfb.png')">http://facebook.com/danielormisher</a>                    
+		</li>
+		<li>
+			<a href="http://twitter.com/dormisher" style="background-image:url('/images/favtwitter.png')">@dormisher</a>                    
+		</li>
+		<li>
+			<a href="mailto:dan@danielormisher.com" style="background-image:url('/images/favgmail.png')">dormisher@gmail.com</a>
+		</li>
+		<li>
+			<a href="http://stackoverflow.com/users/323051/" style="background-image:url('http://stackoverflow.com/favicon.ico')">Stack Overflow</a>                    
+		</li>
+		<li>
+			<a href="https://github.com/dormisher" style="background-image:url('/images/gitfav.jpg')">GitHub</a>
+		</li>
+	</ul>
+</div>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+	$(function () {
+		$('div.section .overlay').mouseenter(function () {
+			$('div.section .overlay').not(this).fadeIn()
+			$(this).fadeOut()
+		})
+	})
+</script></div>
+	</body>
+	
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-33264122-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+	
+</html>
