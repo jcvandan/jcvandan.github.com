@@ -25,9 +25,9 @@ div.section.blue h2 {text-shadow:#B4CEE6;}
 div.section.indigo .overlay {background-color:#8AB9AE; display: none;}
 div.section.indigo h2 {text-shadow:#D3E5E1;}
 
-div.tech {display: inline-block; width:230px; vertical-align:top; margin-top:20px;}
+div.tech {display: inline-block; width:230px; vertical-align:top; }
 
-ul.list { vertical-align:top; font-size:13px; margin-left:5px; margin-top:40px; }
+ul.list { vertical-align:top; font-size:13px; margin-left:5px; margin-top:20px; }
 ul.list a { text-decoration:none; color:#333; background-repeat:no-repeat; padding-left:30px; }
 ul.list a:hover { color:#FA6900; }
 ul.list li { margin:10px 0!important; list-style:circle inside; color:#333; }
