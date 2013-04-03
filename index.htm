@@ -12,11 +12,11 @@ layout: master
 		about me and what I'm interested in. See what I do, and see examples of my work.
 	</p>
 	<p>
-		As a developer I consider myself 'tech agnostic', i.e. I'm open to any programming language / framework
-		that may spark my interest. I don't display fanatic zeal at the anticipation of a new release of .NET, and
-		you won't see me glare at a Ruby developer with disdain, but if there's something interesting in a tool
-		that might make my life a bit easier - then that's cool. I just really enjoy making cool stuff for the web,
-		and working with anything that helps me to do that.
+		As a developer I'm tech agnostic. I'm open to web technologies
+		that may spark my interest. I spend the majority of my time using a combination of server .NET
+		stuff and client JS stuff. I'm currently enjoying becoming more and more proficient at building
+		complex UI's using Backbone.js, which I think is a great little framework. I essentially just enjoy
+		making cool stuff for the web.
 	</p>
 	<p>
 		If you want to speak to me for any reason please get in touch via email or twitter or whatever.
@@ -29,30 +29,25 @@ layout: master
 	</div>
 	<h2>tech</h2>
 	<p>
-		I use a load of different stuff from day to day, at work and in my own time, but this is the stuff I find
-		myself using the majority of the time (although this is generally subject to change every few months or so).
+		Below are the tools I find myself using most often to build AWESOME STUFF.
 	</p>
 
 	<div class="tech">
-		<h4>.NET</h4>
+		<h4>Server</h4>
 		<ul class="list">
-			<li>C# 4.0</li>
-			<li>ASP.NET MVC 3</li>
-			<li>Spark view engine</li>
-			<li>Razor view engine</li>
+			<li>C#</li>
+			<li>MVC 4 / Razor</li>
 			<li>nUnit</li>
-			<li>EF code first</li>
+			<li>Entity Framework (Code first)</li>
 		</ul>
 	</div>
 
 	<div class="tech">
-		<h4>Javascript</h4>
+		<h4>Client</h4>
 		<ul class="list">
+			<li>jQuery (obv.)</li>
 			<li>Backbone</li>
 			<li>Jasmine</li>
-			<li>jQuery</li>
-			<li>RequireJS</li>
-			<li>Underscore</li>
 		</ul>
 	</div>
 </div>
@@ -63,7 +58,7 @@ layout: master
 	</div>
 	<h2>work</h2>
 	<p>
-		For my day job, I work as an work level web developer at <a href="http://ekmsystems.com">ekmSystems</a>,
+		For my day job, I work as an work level web developer at <a target="_blank" href="http://ekmsystems.com">ekmSystems</a>,
 		an industry leader in it's field and a fantastic place to work. Below are some examples of my work with ekm.
 	</p>
 
@@ -105,7 +100,7 @@ layout: master
 
 <script type="text/javascript">
 	$(function () {
-		$('div.section .overlay').mouseenter(function () {
+		$('div.section .overlay').click(function () {
 			$('div.section .overlay').not(this).fadeIn()
 			$(this).fadeOut()
 		})
