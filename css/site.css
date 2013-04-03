@@ -14,7 +14,8 @@ div.section {display:inline-block; width:476px; height:350px; border-radius:10px
 div.section.mr { margin-right:40px; }
 div.section h2 { font-size:30px; color:#333; margin:20px; font-weight: normal; font-family: impact; text-shadow: 1px 1px 3px #DDD; }
 
-div.section .overlay {position:absolute; height:350px; width:476px; border-radius:10px;cursor:pointer; }
+div.section .overlay {position:absolute; height:350px; width:476px; border-radius:10px;cursor:pointer; border: 1px solid #fff; }
+div.section .overlay:hover { border: 1px solid #bbb; }
 div.section.red .overlay {background-color:#CB4642; }
 div.section.red h2 {text-shadow:#DF8E8B;}
 div.section.green .overlay {background-color:#9CC345;}
