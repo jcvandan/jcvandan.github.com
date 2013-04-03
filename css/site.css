@@ -34,16 +34,16 @@ ul.list li { margin:10px 0!important; list-style:circle inside; color:#333; }
 ul.list ul#connect li { list-style:none outside; }
 ul.list ul.contactList li { list-style:none; }
 
-div.work:-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 12px;
 }
  
-div.work:-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
     border-radius: 10px;
 }
  
-div.work:-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
