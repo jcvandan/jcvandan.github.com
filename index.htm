@@ -101,8 +101,8 @@ layout: master
 <script type="text/javascript">
 	$(function () {
 		$('div.section .overlay').click(function () {
-			$('div.section .overlay').not(this).fadeIn()
-			$(this).fadeOut()
+			$('div.section .overlay').not(this).show()
+			$(this).hide()
 		})
 	})
 </script>
