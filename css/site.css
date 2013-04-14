@@ -1,18 +1,21 @@
 body { font-family: 'Droid Sans', sans-serif; background-color:#fff; padding-bottom:100px; font-family: Calibri; color:#555;}
-body div#wrapper { width:1000px; margin:0 auto; }
+div.wrapper { width:1000px; margin:0 auto; }
 
-div#topBar { height:15px; background-color:#333; padding-top:20px; margin-bottom:20px; }
+div#topBar { background-color:#333; padding-top:10px; margin-bottom:20px; }
 div#topBar p {color:#fff; width:1000px; margin:auto;}
 div#bottomBar { min-height:50px; background-color:#333; }
 
-p { line-height:150%; font-family:Calibri; font-size:14px; color:#555; text-align:justify; margin-bottom:20px;}
+p { line-height:150%; font-family:Calibri; font-size:14px; color:#555; text-align:justify; margin-bottom:15px;}
 a {color:#026AC2; text-decoration:none;}
 a:hover {color:#026AC2; text-decoration:underline;}
 
-div.section {display:inline-block; width:476px; height:350px; border-radius:10px; margin:20px 0; margin-right:0;
+h1 { font-size:25px; color:#eee; font-weight: normal; font-family: impact;padding-bottom: 3px; margin-left: 20px; }
+
+div.section {display:inline-block; width:456px; padding:10px; height:350px; border-radius:10px; margin:20px 0; margin-right:0;
 				 overflow:hidden; vertical-align:top; }
 div.section.mr { margin-right:40px; }
 div.section h2 { font-size:30px; color:#333; margin:20px; font-weight: normal; font-family: impact; text-shadow: 1px 1px 3px #DDD; }
+div.section  .overflow { overflow-y: scroll; padding-right:10px; }
 
 div.section .overlay {position:absolute; height:350px; width:476px; border-radius:10px;cursor:pointer; border: 1px solid #fff; }
 div.section .overlay:hover { border: 1px solid #bbb; }
@@ -25,7 +28,10 @@ div.section.blue h2 {text-shadow:#B4CEE6;}
 div.section.indigo .overlay {background-color:#8AB9AE; display: none;}
 div.section.indigo h2 {text-shadow:#D3E5E1;}
 
-div.tech {display: inline-block; width:230px; vertical-align:top; }
+div#about img#profile {float:left; margin-right:20px; margin-bottom:5px;}
+div#about p#topP {float:left; width:355px; }
+
+div.tech {display: inline-block; width:225px; vertical-align:top; }
 
 ul.list { vertical-align:top; font-size:13px; margin-left:5px; margin-top:20px; }
 ul.list a { text-decoration:none; color:#333; background-repeat:no-repeat; padding-left:30px; }
@@ -34,10 +40,9 @@ ul.list li { margin:10px 0!important; list-style:circle inside; color:#333; }
 ul.list ul#connect li { list-style:none outside; }
 ul.list ul.contactList li { list-style:none; }
 
-div.work {display: inline-block; height: 197px; overflow-y: scroll; padding-right:10px;}
-div.work a {float:left;}
-div.work p {font-size:12px;color:#777; float:right; width: 210px; margin-left: 15px; margin-top:10px;} 
-div.work img {border-radius:10px; margin-bottom:5px; width:228px; float:left; opacity:1; transition: opacity .25s ease-in-out;
+div.work {display: inline-block; height: 197px; padding-right:10px;}
+div.work p {font-size:12px; color:#777; margin-top:10px;} 
+div.work img {border-radius:10px; border:1px solid #ddd; margin-bottom:5px; width:185px; opacity:1; transition: opacity .25s ease-in-out;
    			  -moz-transition: opacity .25s ease-in-out; -webkit-transition: opacity .25s ease-in-out; }
 div.work img:hover {opacity:0.7;}
 
