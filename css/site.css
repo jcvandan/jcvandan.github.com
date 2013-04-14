@@ -1,7 +1,10 @@
 body { font-family: 'Droid Sans', sans-serif; background-color:#fff; padding-bottom:100px; font-family: Calibri; color:#555;}
-div.wrapper { width:1000px; margin:0 auto; }
+div.wrapper { width:1000px; margin:0 auto; *display:none; }
 
-div#topBar { background-color:#333; padding-top:10px; margin-bottom:20px; }
+div#ieMsg { font-size:30px; padding-top:30px; text-align:center; display:none;*display:block; }
+div#ieMsg span {font-style:italic;font-size:25px;}
+
+div#topBar { background-color:#333; padding-top:10px; margin-bottom:20px;*display:none; }
 div#topBar p {color:#fff; width:1000px; margin:auto;}
 div#bottomBar { min-height:50px; background-color:#333; }
 
@@ -15,7 +18,7 @@ div.section {display:inline-block; width:456px; padding:10px; height:350px; bord
 				 overflow:hidden; vertical-align:top; }
 div.section.mr { margin-right:40px; }
 div.section h2 { font-size:30px; color:#333; margin:20px; font-weight: normal; font-family: impact; text-shadow: 1px 1px 3px #DDD; }
-div.section  .overflow { overflow-y: scroll; padding-right:10px; }
+div.section  .overflow { overflow-y: scroll; padding-right:10px; height:275px; }
 
 div.section .overlay {position:absolute; height:350px; width:476px; border-radius:10px;cursor:pointer; border: 1px solid #fff; }
 div.section .overlay:hover { border: 1px solid #bbb; }
