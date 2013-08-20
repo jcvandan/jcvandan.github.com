@@ -1,64 +1,36 @@
-body { font-family: 'Droid Sans', sans-serif; background-color:#fff; padding-bottom:100px; font-family: Calibri; color:#555;}
+
+/* font-faces */
+
+@font-face {
+    font-family: 'CodePro';
+    src: url('../fonts/Code_Pro_Demo-webfont.eot');
+    src: url('../fonts/Code_Pro_Demo-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Code_Pro_Demo-webfont.svg#CodeProDemoRegular') format('svg'),
+         url('../fonts/Code_Pro_Demo-webfont.woff') format('woff'),
+         url('../fonts/Code_Pro_Demo-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* layout */
+
+body { background-color:#fff; font-size:14px; font-family: Verdana; color:#555;}
 div.wrapper { width:1000px; margin:0 auto; *display:none; }
 
-div#ieMsg { font-size:30px; padding-top:30px; text-align:center; display:none;*display:block; }
-div#ieMsg span {font-style:italic;font-size:25px;}
+h1 { font-size:45px; color:#333; font-weight: bold; font-family: 'CodePro'; margin:40px 0 20px 0; }
+h1 img { float:right; }
+h2 { font-size:40px; color:#aaa; font-family:'CodePro'; font-weight: bold; margin:40px 0 20px 0; }
 
-div#topBar { background-color:#333; padding-top:10px; margin-bottom:20px;*display:none; }
-div#topBar p {color:#fff; width:1000px; margin:auto;}
-div#bottomBar { min-height:50px; background-color:#333; }
-
-p { line-height:150%; font-family:Calibri; font-size:14px; color:#555; text-align:justify; margin-bottom:15px;}
+a, ul, p { margin-bottom:10px; line-height:1.6; }
 a {color:#026AC2; text-decoration:none;}
 a:hover {color:#026AC2; text-decoration:underline;}
 
-h1 { font-size:25px; color:#eee; font-weight: normal; font-family: impact;padding-bottom: 3px; margin-left: 20px; }
+ul { list-style:circle inside; }
+ul.tech { width:490px; display:inline-block; margin-top:20px; }
+ul.connect { list-style:none; }
+ul.connect li a { padding-left:30px; background-repeat:no-repeat; }
 
-div.section {display:inline-block; width:456px; padding:10px; height:350px; border-radius:10px; margin:20px 0; margin-right:0;
-				 overflow:hidden; vertical-align:top; }
-div.section.mr { margin-right:40px; }
-div.section h2 { font-size:30px; color:#333; margin:20px; font-weight: normal; font-family: impact; text-shadow: 1px 1px 3px #DDD; }
-div.section  .overflow { overflow-y: scroll; padding-right:10px; height:275px; }
+/* ie7 message */
 
-div.section .overlay {position:absolute; height:350px; width:476px; border-radius:10px;cursor:pointer; border: 1px solid #fff; }
-div.section .overlay:hover { border: 1px solid #bbb; }
-div.section.red .overlay {background-color:#CB4642; }
-div.section.red h2 {text-shadow:#DF8E8B;}
-div.section.green .overlay {background-color:#9CC345;}
-div.section.green h2 {text-shadow:#CDE1A3;}
-div.section.blue .overlay {background-color:#7AA8D2;}
-div.section.blue h2 {text-shadow:#B4CEE6;}
-div.section.indigo .overlay {background-color:#8AB9AE; display: none;}
-div.section.indigo h2 {text-shadow:#D3E5E1;}
-
-div#about img#profile {float:left; margin-right:20px; margin-bottom:5px;}
-div#about p#topP {float:left; width:355px; }
-
-div.tech {display: inline-block; width:225px; vertical-align:top; }
-
-ul.list { vertical-align:top; font-size:13px; margin-left:5px; margin-top:20px; }
-ul.list a { text-decoration:none; color:#333; background-repeat:no-repeat; padding-left:30px; }
-ul.list a:hover { color:#FA6900; }
-ul.list li { margin:10px 0!important; list-style:circle inside; color:#333; }
-ul.list ul#connect li { list-style:none outside; }
-ul.list ul.contactList li { list-style:none; }
-
-div.work {display: inline-block; height: 197px; padding-right:10px;}
-div.work p {font-size:12px; color:#777; margin-top:10px;} 
-div.work img {border-radius:10px; border:1px solid #ddd; margin-bottom:5px; width:185px; opacity:1; transition: opacity .25s ease-in-out;
-   			  -moz-transition: opacity .25s ease-in-out; -webkit-transition: opacity .25s ease-in-out; }
-div.work img:hover {opacity:0.7;}
-
-::-webkit-scrollbar {
-    width: 12px;
-}
- 
-::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-    border-radius: 10px;
-}
- 
-::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
-}
+div#ieMsg { font-size:30px; padding-top:30px; text-align:center; display:none;*display:block; }
+div#ieMsg span {font-style:italic;font-size:25px;}
