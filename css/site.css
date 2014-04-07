@@ -18,26 +18,26 @@ div.wrapper { width:1000px; margin:0 auto; *display:none;padding-top:90px; }
 
 header {
     border-bottom: 1px solid #ddd;
-    position: fixed;
     background-color: #eee;
     padding-top: 20px;
-    box-shadow:0px 2px 10px #bbb;
     width:100%;
 }
-header .inner {margin:auto;width:1000px;}
+header img {
+    display: inline-block;
+    margin: auto;
+    border-radius: 50px;
+    margin-bottom: 15px;
+}
+header .inner {
+    margin:auto;
+    width:1000px;
+    text-align:center;
+}
 header .inner h1 {
     font-size: 50px;
     color: #06A6C8;
     font-weight: bold;
     font-family: 'CodePro';
-    display:inline-block;
-    width:380px;
-}
-
-#icons {
-    display:inline-block;
-    width:400px;
-    text-align:right;
 }
 
 #icons img {
