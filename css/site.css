@@ -14,23 +14,19 @@
 /* layout */
 
 body { background-color:#fff; font-size:17px; font-family: 'Open Sans', Tahoma; color:#555; padding-bottom:100px;}
-div.wrapper { width:1000px; margin:0 auto; *display:none;padding-top:30px; }
+div.wrapper { width:100%;max-width:1000px; margin:0 auto; *display:none;padding:30px; box-sizing:border-box; }
 
 header {
     background-color: #eee;
     padding-top: 20px;
     width:100%;
+    text-align:center;
 }
 header img {
     display: inline-block;
     margin: auto;
     border-radius: 50px;
     margin-bottom: 15px;
-}
-header .inner {
-    margin:auto;
-    width:1000px;
-    text-align:center;
 }
 header .inner h1 {
     font-size: 50px;
