@@ -17,7 +17,6 @@ body { background-color:#fff; font-size:17px; font-family: 'Open Sans', Tahoma; 
 div.wrapper { width:1000px; margin:0 auto; *display:none;padding-top:30px; }
 
 header {
-    border-bottom: 1px solid #ddd;
     background-color: #eee;
     padding-top: 20px;
     width:100%;
@@ -55,7 +54,7 @@ header .inner h1 {
     opacity:1;
 }
     
-h2 { font-size:40px; color:#06A6C8; font-family:'CodePro'; font-weight: bold; margin:40px 0 20px 0; }
+h2 { font-size:40px; font-family:'CodePro'; font-weight: bold; margin:40px 0 20px 0; border-bottom:2px dashed #eee; }
 
 a, ul, p { margin-bottom:10px; line-height:1.6; }
 a {color:#06A6C8; text-decoration:none;}
