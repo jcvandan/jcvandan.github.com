@@ -62,7 +62,7 @@ a {color:#06A6C8; text-decoration:none;}
 a:hover {text-decoration:underline;}
 
 ul { list-style:circle inside; }
-ul.tech { width:490px; display:inline-block; margin-top:20px; margin-bottom:0; vertical-align:top;}
+ul.tech { width:49%; display:inline-block; margin-top:20px; margin-bottom:0; vertical-align:top;}
 
 /* ie7 message */
 
