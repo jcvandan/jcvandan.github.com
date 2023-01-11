@@ -1,65 +1,103 @@
 /* font-faces */
 
 @font-face {
-    font-family: 'CodePro';
-    src: url('../fonts/Code_Pro_Demo-webfont.eot');
-    src: url('../fonts/Code_Pro_Demo-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Code_Pro_Demo-webfont.svg#CodeProDemoRegular') format('svg'),
-         url('../fonts/Code_Pro_Demo-webfont.woff') format('woff'),
-         url('../fonts/Code_Pro_Demo-webfont.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
+  font-family: "CodePro";
+  src: url("../fonts/Code_Pro_Demo-webfont.eot");
+  src: url("../fonts/Code_Pro_Demo-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Code_Pro_Demo-webfont.svg#CodeProDemoRegular") format("svg"),
+    url("../fonts/Code_Pro_Demo-webfont.woff") format("woff"),
+    url("../fonts/Code_Pro_Demo-webfont.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
 }
 
 /* layout */
 
-body { background-color:#fff; font-size:17px; font-family: 'Open Sans', Tahoma; color:#555; padding-bottom:100px;}
-div.wrapper { width:100%;max-width:1000px; margin:0 auto; *display:none;padding:30px; box-sizing:border-box; }
+body {
+  background-color: #fff;
+  font-size: 17px;
+  font-family: "Open Sans", Tahoma;
+  color: #555;
+  padding-bottom: 100px;
+}
+div.wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  *display: none;
+  padding: 30px;
+  box-sizing: border-box;
+}
 
 header {
-    background-color: #eee;
-    padding-top: 20px;
-    width:100%;
-    text-align:center;
+  background-color: #eee;
+  padding-top: 20px;
+  width: 100%;
+  text-align: center;
 }
-header img {
-    display: inline-block;
-    margin: auto;
-    border-radius: 50px;
-    margin-bottom: 15px;
+header img#profile {
+  display: inline-block;
+  margin: auto;
+  border-radius: 50px;
+  margin-bottom: 15px;
 }
 header .inner h1 {
-    font-size: 50px;
-    color: #06A6C8;
-    font-weight: bold;
-    font-family: 'CodePro';
+  font-size: 50px;
+  color: #06a6c8;
+  font-weight: bold;
+  font-family: "CodePro";
 }
 
 #icons img {
-    width: 40px;
-    display: inline;
-    margin: 0 5px;
-    opacity: 0.5;
-    margin-bottom:-3px;
-    transition: opacity .25s ease-in-out;
-    -moz-transition: opacity .25s ease-in-out;
-    -webkit-transition: opacity .25s ease-in-out;
+  width: 40px;
+  display: inline;
+  margin: 0 5px;
+  opacity: 0.5;
+  margin-bottom: -3px;
+  transition: opacity 0.25s ease-in-out;
+  -moz-transition: opacity 0.25s ease-in-out;
+  -webkit-transition: opacity 0.25s ease-in-out;
 }
 
 #icons img:hover {
-    opacity:1;
+  opacity: 1;
 }
-    
-h2 { font-size:40px; font-family:'CodePro'; font-weight: bold; margin:40px 0 20px 0; border-bottom:2px dashed #eee; }
 
-a, ul, p { margin-bottom:10px; line-height:1.6; }
-a {color:#06A6C8; text-decoration:none;}
-a:hover {text-decoration:underline;}
+h2 {
+  font-size: 40px;
+  font-family: "CodePro";
+  font-weight: bold;
+  margin: 40px 0 20px 0;
+  border-bottom: 2px dashed #eee;
+}
 
-ul { list-style:circle inside; }
-ul.tech { width:49%; min-width:250px; display:inline-block; margin-top:20px; margin-bottom:0; vertical-align:top;}
+strong {
+  font-weight: bold;
+  font-size: 20px;
+}
 
-/* ie7 message */
+a,
+ul,
+p {
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+a {
+  color: #06a6c8;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
 
-div#ieMsg { font-size:30px; padding-top:30px; text-align:center; display:none;*display:block; }
-div#ieMsg span {font-style:italic;font-size:25px;}
+ul {
+  list-style: circle inside;
+}
+ul.tech {
+  width: 49%;
+  min-width: 250px;
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: top;
+}
